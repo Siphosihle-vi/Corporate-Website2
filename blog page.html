@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Coporate Blog</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #bbb 1px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+
+        .blog-post {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h2 {
+            color: #e8491d;
+            margin-top: 0;
+        }
+
+        .blog-post .post-meta {
+            font-size: 0.8em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .blog-post img {
+            width: 100%;
+            max-height: 300px; 
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .blog-post a {
+            color: #e8491d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        aside#sidebar {
+            float: right;
+            width: 30%;
+            margin-top: 10px;
+        }
+
+        aside#sidebar .widget {
+            padding: 20px;
+            border: #ddd 1px solid;
+            background: #fff;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        aside#sidebar .widget h3 {
+            margin: 0;
+            color: #e8491d;
+        }
+
+
+        article#main-col {
+            float: left;
+            width: 65%;
+        }
+
+
+
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #e8491d;
+            text-align: center;
+        }
+
+
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li,
+            aside#sidebar,
+            article#main-col {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+
+            header {
+                padding-bottom: 20px;
+            }
+
+            aside#sidebar {
+                margin-top: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">My</span> Coporate Blog</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="content">
+        <div class="container">
+            <article id="main-col">
+                <div class="blog-post">
+                    <h2>First Blog Post</h2>
+                    <p class="post-meta">Posted by John Doe on 17 february , 2025</p>
+                    <img src="images/1.JPG" alt="Blog Post Image">
+                    <p>
+                        It is not hard to find a good steak in South Africa, a country known for its fondness of meat, but I have not found a better one than at Marble Restaurant in Johannesburg.  
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="blog-post">
+                    <h2>Second Blog Post</h2>
+                    <p class="post-meta">Posted by Jane Smith on 17 february, 2025</p>
+                    <img src="images/2.JPG" alt="Another Blog Post Image">
+                    <p>
+                        It is not hard to find a good steak in South Africa, a country known for its fondness of meat, but I have not found a better one than at Marble Restaurant in Johannesburg.  
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+
+            <aside id="sidebar">
+                <div class="widget">
+                    <h3>About us</h3>
+                    <p>At Corporate, we provide innovative solutions that help businesses optimize operations and drive growth. Our team of experts works closely with clients to deliver tailored services that address unique needs and challenges.
+
+                        With a focus on integrity, collaboration, and excellence, we aim to build lasting relationships and support our clients in achieving their goals. Trust Corporate to be your partner in success.
+                        
+                        </p>
+                </div>
+
+                <div class="widget">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Personal</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <p>My Awesome Blog, Copyright &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
